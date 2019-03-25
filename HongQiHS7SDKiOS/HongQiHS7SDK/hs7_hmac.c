@@ -35,6 +35,8 @@
 #include "hs7_hmac.h"
 #include "hs7_brg_types.h"
 
+#include <memory.h>
+
 #if defined(__cplusplus)
 extern "C"
 {
