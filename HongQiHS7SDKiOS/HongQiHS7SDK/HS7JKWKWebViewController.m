@@ -582,7 +582,7 @@ completionHandler:(void (^)(NSString * __nullable result))completionHandler {
  */
 - (void)releaseZipFilesWithUnzipFileAtPath:(NSString *)zipPath Destination:(NSString *)unzipPath{
     NSError *error;
-    if ([SSZipArchive unzipFileAtPath:zipPath toDestination:unzipPath overwrite:YES password:nil error:&error delegate:self]) {
+    if ([HS7SSZipArchive unzipFileAtPath:zipPath toDestination:unzipPath overwrite:YES password:nil error:&error delegate:self]) {
 //        NSLog(@"success");
 //        NSLog(@"unzipPath = %@",unzipPath);
         /*
@@ -704,7 +704,7 @@ completionHandler:(void (^)(NSString * __nullable result))completionHandler {
     [operation start];
 }
 
-#pragma mark - SSZipArchiveDelegate
+#pragma mark - HS7SSZipArchiveDelegate
 - (void)zipArchiveWillUnzipArchiveAtPath:(NSString *)path zipInfo:(unz_global_info)zipInfo {
 //    NSLog(@"将要解压。");
 }

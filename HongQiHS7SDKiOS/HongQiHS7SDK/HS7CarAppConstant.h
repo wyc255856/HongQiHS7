@@ -48,7 +48,7 @@
 #define KIsiPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
 
 //在线车型首页web URL
-#define BaseURL   (@"http://www.e-guides.faw.cn/EV/")
+#define BaseURL   (@"http://www.haoweisys.com/HS7/")
 
 //在线设置页面web URL
 #define SettingURL   (@"http://www.e-guides.faw.cn/C217/C217_1/pages/set.html")
@@ -69,21 +69,24 @@ typedef NS_ENUM(NSUInteger, nMode) {
 
 
 //车型
-#define typeManualComfortable       (@"EV_1")//型动版
-#define typeManualLuxury            (@"EV_2")//智联灵动版
-#define typeManualHonorable         (@"EV_3")//智联韵动版
-#define typeAutomaticComfortable    (@"EV_4")//智联享动版
-#define typeAutomaticLuxury         (@"HONGQIH5_5")//智联御动版
-#define typeAutomaticHonorable      (@"C217_6")//自动尊贵
-#define typeAutomaticUltimate       (@"C217_7")//自动旗舰
+#define typeManualComfortable       (@"HS7_1")//  五座低配
+#define typeManualLuxury            (@"HS7_2")//  五座中低配
+#define typeManualHonorable         (@"HS7_3")//  七座中低配
+#define typeAutomaticComfortable    (@"HS7_4")//  五座中高配
+#define typeAutomaticLuxury         (@"HS7_5")//  七座中高配
+#define typeAutomaticHonorable      (@"HS7_6")//  五座顶配
+#define typeAutomaticUltimate       (@"HS7_7")//  七座顶配
 
 //通过车名称获取车型
 #define kFuncGetCarTypeByCarName(sName)\
 ^(){NSDictionary *dic = @{\
-@"EV_1":@"EV_1",\
-@"EV_2":@"EV_2",\
-@"EV_3":@"EV_3",\
-@"EV_4":@"EV_4",};\
+@"HS7_1":@"HS7_1",\
+@"HS7_2":@"HS7_2",\
+@"HS7_3":@"HS7_3",\
+@"HS7_4":@"HS7_4",\
+@"HS7_5":@"HS7_5",\
+@"HS7_6":@"HS7_6",\
+@"HS7_7":@"HS7_7",};\
 return dic[sName];\
 }()
 

@@ -162,7 +162,7 @@
         
         //添加左侧的文字展示
         _searchViewLabel = [[UILabel alloc] initWithFrame:CGRectMake(10*KScale, 0, 100*KScale, 20*KScale)];
-        _searchViewLabel.text = @"两驱舒适型-南方版";
+        _searchViewLabel.text = @"五座低配";
         _searchViewLabel.textColor = [UIColor whiteColor];
         _searchViewLabel.textAlignment = NSTextAlignmentLeft;
         _searchViewLabel.font = [UIFont systemFontOfSize:9*KScale];
@@ -231,26 +231,26 @@
     _chooseCarModelIndex = btn.tag;
     switch (tag) {
         case 100001:
-            _searchViewLabel.text = @"两驱舒适型-南方版";
+            _searchViewLabel.text = @"五座低配";
             break;
         case 100002:
-            _searchViewLabel.text = @"两驱舒适型-北方版";
+            _searchViewLabel.text = @"五座中低配";
             break;
         case 100003:
-            _searchViewLabel.text = @"四驱舒适型-南方版";
+            _searchViewLabel.text = @"七座中低配";
             break;
         case 100004:
-            _searchViewLabel.text = @"四驱舒适型-北方版";
+            _searchViewLabel.text = @"五座中高配";
             break;
-//        case 100005:
-//            _searchViewLabel.text = @"自动豪华";
-//            break;
-//        case 100006:
-//            _searchViewLabel.text = @"自动尊贵";
-//            break;
-//        case 100007:
-//            _searchViewLabel.text = @"自动旗舰";
-//            break;
+        case 100005:
+            _searchViewLabel.text = @"七座中高配";
+            break;
+        case 100006:
+            _searchViewLabel.text = @"五座顶配";
+            break;
+        case 100007:
+            _searchViewLabel.text = @"七座顶配";
+            break;
         default:
             break;
     }
@@ -318,12 +318,12 @@
         
         float lineWidth = _chooseCarModelView.width-5*KScale*2;
         float lineLeft = 5*KScale;
-        //手动舒适
+        //L（五座）
         UIButton *sdssBtn = [[UIButton alloc] initWithFrame:CGRectMake(btnLeft, 0.5*lineHeight, _chooseCarModelView.width, btnHeight)];
         sdssBtn.tag = 100001;
         sdssBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
         [sdssBtn setTitleColor:[UIColor whiteColor] forState: UIControlStateNormal];
-        [sdssBtn setTitle:@"两驱舒适型-南方版" forState: UIControlStateNormal];
+        [sdssBtn setTitle:@"五座低配" forState: UIControlStateNormal];
         sdssBtn.titleLabel.font = [UIFont systemFontOfSize:textSize];
         [sdssBtn addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
         [scrollSubView addSubview:sdssBtn];
@@ -334,12 +334,12 @@
         [sdssLineImgView setImage:imageLine1];
         [scrollSubView addSubview:sdssLineImgView];
         
-        //手动豪华
+        //M-（五座）
         UIButton *sdhhBtn = [[UIButton alloc] initWithFrame:CGRectMake(btnLeft, sdssLineImgView.bottom, _chooseCarModelView.width, btnHeight)];
         sdhhBtn.tag = 100002;
         sdhhBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
         [sdhhBtn setTitleColor:[UIColor whiteColor] forState: UIControlStateNormal];
-        [sdhhBtn setTitle:@"两驱舒适型-北方版" forState: UIControlStateNormal];
+        [sdhhBtn setTitle:@"五座中低配" forState: UIControlStateNormal];
         sdhhBtn.titleLabel.font = [UIFont systemFontOfSize:textSize];
         [sdhhBtn addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
         [scrollSubView addSubview:sdhhBtn];
@@ -350,12 +350,12 @@
         [scrollSubView addSubview:sdhhLineImgView];
         
         
-        //手动尊贵
+        //M-（七座）
         UIButton *sdzgBtn = [[UIButton alloc] initWithFrame:CGRectMake(btnLeft, sdhhLineImgView.bottom, _chooseCarModelView.width, btnHeight)];
         sdzgBtn.tag = 100003;
         sdzgBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
         [sdzgBtn setTitleColor:[UIColor whiteColor] forState: UIControlStateNormal];
-        [sdzgBtn setTitle:@"四驱舒适型-南方版" forState: UIControlStateNormal];
+        [sdzgBtn setTitle:@"七座中低配" forState: UIControlStateNormal];
         [sdzgBtn addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
         [scrollSubView addSubview:sdzgBtn];
         
@@ -366,12 +366,12 @@
         [scrollSubView addSubview:sdzgLineImgView];
         
         
-        //自动舒适
+        //M+（五座）
         UIButton *zdssBtn = [[UIButton alloc] initWithFrame:CGRectMake(btnLeft, sdzgLineImgView.bottom, _chooseCarModelView.width, btnHeight)];
         zdssBtn.tag = 100004;
         zdssBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
         [zdssBtn setTitleColor:[UIColor whiteColor] forState: UIControlStateNormal];
-        [zdssBtn setTitle:@"四驱舒适型-北方版" forState: UIControlStateNormal];
+        [zdssBtn setTitle:@"五座中高配" forState: UIControlStateNormal];
         [zdssBtn addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
         [scrollSubView addSubview:zdssBtn];
         
@@ -381,49 +381,49 @@
         [zdssLineImgView setImage:imageLine4];
         [scrollSubView addSubview:zdssLineImgView];
         
-//
-//        //自动豪华
-//        UIButton *zdhhBtn = [[UIButton alloc] initWithFrame:CGRectMake(btnLeft, zdssLineImgView.bottom, _chooseCarModelView.width, btnHeight)];
-//        zdhhBtn.tag = 100005;
-//        zdhhBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
-//        [zdhhBtn setTitleColor:[UIColor whiteColor] forState: UIControlStateNormal];
-//        [zdhhBtn setTitle:@"自动豪华" forState: UIControlStateNormal];
-//        [zdhhBtn addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
-//        [scrollSubView addSubview:zdhhBtn];
-//
-//        UIImageView * zdhhLineImgView = [[UIImageView alloc] initWithFrame:CGRectMake(lineLeft, zdhhBtn.bottom, lineWidth, lineHeight)];
-//        UIImage *imageLine5=  resourceBundle?[UIImage imageNamed:resNameLine inBundle:resourceBundle compatibleWithTraitCollection:nil]:[UIImage imageNamed:resNameLine];
-//        [zdhhLineImgView setImage:imageLine5];
-//        [scrollSubView addSubview:zdhhLineImgView];
-//
-//        //自动尊贵
-//        UIButton *zdzgBtn = [[UIButton alloc] initWithFrame:CGRectMake(btnLeft, zdhhLineImgView.bottom, _chooseCarModelView.width, btnHeight)];
-//        zdzgBtn.tag = 100006;
-//        zdzgBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
-//        [zdzgBtn setTitleColor:[UIColor whiteColor] forState: UIControlStateNormal];
-//        [zdzgBtn setTitle:@"自动尊贵" forState: UIControlStateNormal];
-//        [zdzgBtn addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
-//        [scrollSubView addSubview:zdzgBtn];
-//
-//        UIImageView * zdzgLineImgView = [[UIImageView alloc] initWithFrame:CGRectMake(lineLeft, zdzgBtn.bottom, lineWidth, lineHeight)];
-//        UIImage *imageLine6=  resourceBundle?[UIImage imageNamed:resNameLine inBundle:resourceBundle compatibleWithTraitCollection:nil]:[UIImage imageNamed:resNameLine];
-//        [zdzgLineImgView setImage:imageLine6];
-//        [scrollSubView addSubview:zdzgLineImgView];
-//
-//
-//        //自动旗舰
-//        UIButton *zdqjBtn = [[UIButton alloc] initWithFrame:CGRectMake(btnLeft, zdzgLineImgView.bottom, _chooseCarModelView.width, btnHeight)];
-//        zdqjBtn.tag = 100007;
-//        zdqjBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
-//        [zdqjBtn setTitleColor:[UIColor whiteColor] forState: UIControlStateNormal];
-//        [zdqjBtn setTitle:@"自动旗舰" forState: UIControlStateNormal];
-//        [zdqjBtn addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
-//        [scrollSubView addSubview:zdqjBtn];
-//
-//        UIImageView * zdqjLineImgView = [[UIImageView alloc] initWithFrame:CGRectMake(lineLeft, zdqjBtn.bottom, lineWidth, lineHeight)];
-//        UIImage *imageLine7=  resourceBundle?[UIImage imageNamed:resNameLine inBundle:resourceBundle compatibleWithTraitCollection:nil]:[UIImage imageNamed:resNameLine];
-//        [zdqjLineImgView setImage:imageLine7];
-//        [scrollSubView addSubview:zdqjLineImgView];
+
+        //M+（七座）
+        UIButton *zdhhBtn = [[UIButton alloc] initWithFrame:CGRectMake(btnLeft, zdssLineImgView.bottom, _chooseCarModelView.width, btnHeight)];
+        zdhhBtn.tag = 100005;
+        zdhhBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+        [zdhhBtn setTitleColor:[UIColor whiteColor] forState: UIControlStateNormal];
+        [zdhhBtn setTitle:@"七座中高配" forState: UIControlStateNormal];
+        [zdhhBtn addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
+        [scrollSubView addSubview:zdhhBtn];
+
+        UIImageView * zdhhLineImgView = [[UIImageView alloc] initWithFrame:CGRectMake(lineLeft, zdhhBtn.bottom, lineWidth, lineHeight)];
+        UIImage *imageLine5=  resourceBundle?[UIImage imageNamed:resNameLine inBundle:resourceBundle compatibleWithTraitCollection:nil]:[UIImage imageNamed:resNameLine];
+        [zdhhLineImgView setImage:imageLine5];
+        [scrollSubView addSubview:zdhhLineImgView];
+
+        //H（五座）
+        UIButton *zdzgBtn = [[UIButton alloc] initWithFrame:CGRectMake(btnLeft, zdhhLineImgView.bottom, _chooseCarModelView.width, btnHeight)];
+        zdzgBtn.tag = 100006;
+        zdzgBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+        [zdzgBtn setTitleColor:[UIColor whiteColor] forState: UIControlStateNormal];
+        [zdzgBtn setTitle:@"五座顶配" forState: UIControlStateNormal];
+        [zdzgBtn addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
+        [scrollSubView addSubview:zdzgBtn];
+
+        UIImageView * zdzgLineImgView = [[UIImageView alloc] initWithFrame:CGRectMake(lineLeft, zdzgBtn.bottom, lineWidth, lineHeight)];
+        UIImage *imageLine6=  resourceBundle?[UIImage imageNamed:resNameLine inBundle:resourceBundle compatibleWithTraitCollection:nil]:[UIImage imageNamed:resNameLine];
+        [zdzgLineImgView setImage:imageLine6];
+        [scrollSubView addSubview:zdzgLineImgView];
+
+
+        //H（七座）
+        UIButton *zdqjBtn = [[UIButton alloc] initWithFrame:CGRectMake(btnLeft, zdzgLineImgView.bottom, _chooseCarModelView.width, btnHeight)];
+        zdqjBtn.tag = 100007;
+        zdqjBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+        [zdqjBtn setTitleColor:[UIColor whiteColor] forState: UIControlStateNormal];
+        [zdqjBtn setTitle:@"七座顶配" forState: UIControlStateNormal];
+        [zdqjBtn addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
+        [scrollSubView addSubview:zdqjBtn];
+
+        UIImageView * zdqjLineImgView = [[UIImageView alloc] initWithFrame:CGRectMake(lineLeft, zdqjBtn.bottom, lineWidth, lineHeight)];
+        UIImage *imageLine7=  resourceBundle?[UIImage imageNamed:resNameLine inBundle:resourceBundle compatibleWithTraitCollection:nil]:[UIImage imageNamed:resNameLine];
+        [zdqjLineImgView setImage:imageLine7];
+        [scrollSubView addSubview:zdqjLineImgView];
         
         
     }
@@ -470,18 +470,18 @@
             NSLog(@"四驱舒适型-北方版");
             strCarTypeName = typeAutomaticComfortable;
             break;
-//        case 100005:
-//            NSLog(@"自动豪华");
-//            strCarTypeName = typeAutomaticLuxury;
-//            break;
-//        case 100006:
-//            NSLog(@"自动尊贵");
-//            strCarTypeName = typeAutomaticHonorable;
-//            break;
-//        case 100007:
-//            NSLog(@"自动旗舰");
-//            strCarTypeName = typeAutomaticUltimate;
-//            break;
+        case 100005:
+            NSLog(@"自动豪华");
+            strCarTypeName = typeAutomaticLuxury;
+            break;
+        case 100006:
+            NSLog(@"自动尊贵");
+            strCarTypeName = typeAutomaticHonorable;
+            break;
+        case 100007:
+            NSLog(@"自动旗舰");
+            strCarTypeName = typeAutomaticUltimate;
+            break;
         default:
             break;
     }

@@ -1,6 +1,6 @@
 //
-//  SSZipArchive.h
-//  SSZipArchive
+//  HS7SSZipArchive.h
+//  HS7SSZipArchive
 //
 //  Created by Sam Soffes on 7/21/10.
 //  Copyright (c) Sam Soffes 2010-2015. All rights reserved.
@@ -12,16 +12,16 @@
 #import <Foundation/Foundation.h>
 #include "HS7Common.h"
 
-@protocol SSZipArchiveDelegate;
+@protocol HS7SSZipArchiveDelegate;
 
-@interface SSZipArchive : NSObject
+@interface HS7SSZipArchive : NSObject
 
 // Unzip
 + (BOOL)unzipFileAtPath:(NSString *)path toDestination:(NSString *)destination;
-+ (BOOL)unzipFileAtPath:(NSString *)path toDestination:(NSString *)destination delegate:(id<SSZipArchiveDelegate>)delegate;
++ (BOOL)unzipFileAtPath:(NSString *)path toDestination:(NSString *)destination delegate:(id<HS7SSZipArchiveDelegate>)delegate;
 
 + (BOOL)unzipFileAtPath:(NSString *)path toDestination:(NSString *)destination overwrite:(BOOL)overwrite password:(NSString *)password error:(NSError * *)error;
-+ (BOOL)unzipFileAtPath:(NSString *)path toDestination:(NSString *)destination overwrite:(BOOL)overwrite password:(NSString *)password error:(NSError * *)error delegate:(id<SSZipArchiveDelegate>)delegate;
++ (BOOL)unzipFileAtPath:(NSString *)path toDestination:(NSString *)destination overwrite:(BOOL)overwrite password:(NSString *)password error:(NSError * *)error delegate:(id<HS7SSZipArchiveDelegate>)delegate;
 
 + (BOOL)unzipFileAtPath:(NSString *)path
     toDestination:(NSString *)destination
@@ -57,7 +57,7 @@
 
 @end
 
-@protocol SSZipArchiveDelegate <NSObject>
+@protocol HS7SSZipArchiveDelegate <NSObject>
 
 @optional
 
