@@ -205,7 +205,7 @@
 //    [self getAppNewVersion];
 //
 //    if(![[ShareManager shareInstance] isBlankString:strCarName]){
-//        JKWKWebViewController *jkVC = [JKWKWebViewController new];
+//        HS7JKWKWebViewController *jkVC = [HS7JKWKWebViewController new];
 //        jkVC.url = [NSString stringWithFormat:@"%@%@",BaseURL,strCarName];
 //        jkVC.bottomViewController = self;
 //        [self presentViewController:jkVC  animated:NO completion:nil];
@@ -221,7 +221,7 @@
     [self getAppNewVersion];
     
     if(![[ShareManager shareInstance] isBlankString:strCarName]){
-        JKWKWebViewController *jkVC = [JKWKWebViewController new];
+        HS7JKWKWebViewController *jkVC = [HS7JKWKWebViewController new];
         jkVC.url = [NSString stringWithFormat:@"%@%@",BaseURL,strCarName];
         jkVC.bottomViewController = self;
         [self presentViewController:jkVC  animated:NO completion:nil];
@@ -236,7 +236,7 @@
 //    if(Visitor == NO){
 //        if(strCarName){
 //            //获取服务器最新资源版本号
-//            JKWKWebViewController *jkVC = [JKWKWebViewController new];
+//            HS7JKWKWebViewController *jkVC = [HS7JKWKWebViewController new];
 //            jkVC.url = [NSString stringWithFormat:@"%@%@",BaseURL,strCarName];
 //            jkVC.bottomViewController = self;
 //            [self presentViewController:jkVC  animated:NO completion:nil];

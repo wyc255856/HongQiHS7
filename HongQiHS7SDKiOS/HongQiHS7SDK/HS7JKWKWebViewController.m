@@ -1,5 +1,5 @@
 //
-//  JKWKWebViewController.m
+//  HS7JKWKWebViewController.m
 //  Pods
 //
 //  Created by Jack on 17/4/1.
@@ -19,7 +19,7 @@
 
 
 
-@interface JKWKWebViewController ()<WKNavigationDelegate, WKUIDelegate, LoadFailedAlertViewDelegate>
+@interface HS7JKWKWebViewController ()<WKNavigationDelegate, WKUIDelegate, HS7LoadFailedAlertViewDelegate>
 
 @property (nonatomic, strong) WKWebView *webView;
 @property (nonatomic, strong) UIProgressView *progressView;
@@ -31,7 +31,7 @@
 
 @end
 
-@implementation JKWKWebViewController
+@implementation HS7JKWKWebViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

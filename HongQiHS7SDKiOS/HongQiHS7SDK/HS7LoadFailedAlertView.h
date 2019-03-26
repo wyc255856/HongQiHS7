@@ -24,7 +24,7 @@ typedef NS_ENUM(NSUInteger, AbnormalButton) {
 
 @class LoadFailedAlertView;
 
-@protocol LoadFailedAlertViewDelegate <NSObject>
+@protocol HS7LoadFailedAlertViewDelegate <NSObject>
 
 - (void)loadFailedAlertView:(LoadFailedAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex;
 
@@ -36,7 +36,7 @@ typedef NS_ENUM(NSUInteger, AbnormalButton) {
 /** 这个弹窗对应的内容 */
 @property (nonatomic,copy) NSString *content;
 
-@property (nonatomic,weak) id<LoadFailedAlertViewDelegate> delegate;
+@property (nonatomic,weak) id<HS7LoadFailedAlertViewDelegate> delegate;
 /**
  弹窗的构造方法
  @param title 弹窗标题

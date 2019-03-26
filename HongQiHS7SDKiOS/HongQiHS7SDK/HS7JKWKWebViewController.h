@@ -1,5 +1,5 @@
 //
-//  JKWKWebViewController.h
+//  HS7JKWKWebViewController.h
 //  Pods
 //
 //  Created by Jack on 17/4/1.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "HS7WelcomeViewController.h"
 
-@interface JKWKWebViewController : UIViewController{
+@interface HS7JKWKWebViewController : UIViewController{
     int nScreen;
 }
 @property (nonatomic, weak) id bottomViewController;

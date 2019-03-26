@@ -11,7 +11,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ShareManager : NSObject
-@property (nonatomic,strong) JKWKWebViewController *wkWebVC;     //当前的VC
+@property (nonatomic,strong) HS7JKWKWebViewController *wkWebVC;     //当前的VC
 + (instancetype) shareInstance;
 - (BOOL)isBlankString:(NSString *)aStr;
 @end

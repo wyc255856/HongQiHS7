@@ -502,7 +502,7 @@
  进入web首页
  */
 -(void) goJKWKWebViewWithURL: (NSString*) url{
-    JKWKWebViewController *jkVC = [JKWKWebViewController new];
+    HS7JKWKWebViewController *jkVC = [HS7JKWKWebViewController new];
     jkVC.bottomViewController = self;
     //    NSString *url = [NSString stringWithFormat:@"file://%@",[[NSBundle mainBundle] pathForResource:@"test" ofType:@"html"]];
     jkVC.url = url;
