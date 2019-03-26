@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIColor (Util)
+@interface UIColor (HS7Util)
 
 /* 从十六进制字符串获取颜色 */
 + (UIColor *)colorWithHexString:(NSString *)color;

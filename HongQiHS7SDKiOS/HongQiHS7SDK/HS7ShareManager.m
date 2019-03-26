@@ -1,5 +1,5 @@
 //
-//  ShareManager.m
+//  HS7ShareManager.m
 //  CarApp
 //
 //  Created by 张三 on 2018/4/4.
@@ -8,10 +8,10 @@
 
 #import "HS7ShareManager.h"
 
-@implementation ShareManager
+@implementation HS7ShareManager
 
 + (instancetype)shareInstance{
-    static ShareManager *shareInstance = nil;
+    static HS7ShareManager *shareInstance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         // Network activity indicator manager setup

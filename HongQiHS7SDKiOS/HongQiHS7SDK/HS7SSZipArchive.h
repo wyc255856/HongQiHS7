@@ -6,8 +6,8 @@
 //  Copyright (c) Sam Soffes 2010-2015. All rights reserved.
 //
 
-#ifndef _SSZIPARCHIVE_H
-#define _SSZIPARCHIVE_H
+#ifndef _HS7SSZIPARCHIVE_H
+#define _HS7SSZIPARCHIVE_H
 
 #import <Foundation/Foundation.h>
 #include "HS7Common.h"
@@ -74,4 +74,4 @@
 
 @end
 
-#endif /* _SSZIPARCHIVE_H */
+#endif /* _HS7SSZIPARCHIVE_H */

@@ -8,7 +8,7 @@
 
 #import "UIView+HS7frameAdjust.h"
 
-@implementation UIView (frameAdjust)
+@implementation UIView (HS7frameAdjust)
 
 - (CGFloat)x{
     return self.frame.origin.x;

@@ -8,7 +8,7 @@
 
 #import "UIColor+HS7Util.h"
 
-@implementation UIColor (Util)
+@implementation UIColor (HS7Util)
 
 + (UIColor *)colorWithHexString:(NSString *)color alpha:(CGFloat)alpha
 {

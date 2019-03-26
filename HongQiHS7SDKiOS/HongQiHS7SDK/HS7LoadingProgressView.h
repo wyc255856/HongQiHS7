@@ -1,5 +1,5 @@
 //
-//  LoadingProgressView.h
+//  HS7LoadingProgressView.h
 //  CarApp
 //
 //  Created by 张三 on 2018/4/20.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoadingProgressView : UIView{
+@interface HS7LoadingProgressView : UIView{
         CAShapeLayer *backGroundFrameLayer;      //背景图层
         CAShapeLayer *backGroundLayer;      //背景图层
         CAShapeLayer *frontFillLayer;       //用来填充的图层

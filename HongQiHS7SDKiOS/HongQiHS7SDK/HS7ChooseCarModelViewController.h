@@ -1,5 +1,5 @@
 //
-//  ChooseCarModelViewController.h
+//  HS7ChooseCarModelViewController.h
 //  CarApp
 //
 //  Created by Yu Chen on 2018/4/21.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ChooseCarModelViewController : UIViewController
+@interface HS7ChooseCarModelViewController : UIViewController
 @property (nonatomic, weak) id bottomViewController;
 
 /**

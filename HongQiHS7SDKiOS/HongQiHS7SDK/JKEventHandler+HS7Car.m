@@ -11,7 +11,7 @@
 #import "HS7ShareManager.h"
 #import "HS7CarAppConstant.h"
 
-@implementation JKEventHandler (Car)
+@implementation JKEventHandler (HS7Car)
 
 /*
  首页设置按钮响应
@@ -49,7 +49,7 @@
     NSLog(@"%@",[NSString stringWithFormat:@"%@%@",SettingURLByType(sCarName),urlBackStr]);
 
 //
-//    if([[ShareManager shareInstance] isBlankString:sCarName]){
+//    if([[HS7ShareManager shareInstance] isBlankString:sCarName]){
 //        [[JKEventHandler shareInstance].webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString: [NSString stringWithFormat:@"%@%@",VisitorSettingURLByType(sCarName),urlBackStr]]]];
 //
 //    }else{
@@ -88,7 +88,7 @@
  */
 - (void)modeCheck:(id)params{
     //    NSLog(@"modeCheck :%@",params);
-    //[[ShareManager shareInstance].wkWebVC showAlert];
+    //[[HS7ShareManager shareInstance].wkWebVC showAlert];
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     [userDefaults setInteger:1 forKey:@"HS7webviewLoadMode"];
     [userDefaults synchronize];
@@ -97,7 +97,7 @@
 
 - (void)downloadZip:(id)params{
     //    NSLog(@"downloadZip");
-    [[ShareManager shareInstance].wkWebVC downLoadZip];
+    [[HS7ShareManager shareInstance].wkWebVC downLoadZip];
     
 }
 
@@ -123,7 +123,7 @@
 - (void)goBack:(id)params{
     //    NSLog(@"goBack");
     if ([self.webView canGoBack]) {
-        [ShareManager shareInstance].wkWebVC.isGoBack = YES;
+        [HS7ShareManager shareInstance].wkWebVC.isGoBack = YES;
         [self.webView goBack];
         // [self.webView reload];
         //        NSString *js = @"memoryNav()";
@@ -147,14 +147,14 @@
     
     if([userDefaults objectForKey:@"HS7webviewLoadMode"]){
         if(nWebViewLoadMode){
-            [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/?upLoad=%@",[ShareManager shareInstance].wkWebVC.url,[userDefaults objectForKey:@"upHS7Load"]]]]];
+            [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/?upLoad=%@",[HS7ShareManager shareInstance].wkWebVC.url,[userDefaults objectForKey:@"upHS7Load"]]]]];
         }else{
             NSString *strLocalCarName = [userDefaults objectForKey:@"localHS7CarModelName"];
             NSURL *temDirURL = [[NSURL fileURLWithPath:NSTemporaryDirectory()] URLByAppendingPathComponent:[NSString stringWithFormat:@"%@/index.html",strLocalCarName]];
             [self.webView loadFileURL:temDirURL allowingReadAccessToURL:temDirURL];
         }
     }else{
-        [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/?upLoad=%@",[ShareManager shareInstance].wkWebVC.url,[userDefaults objectForKey:@"upHS7Load"]]]]];
+        [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/?upLoad=%@",[HS7ShareManager shareInstance].wkWebVC.url,[userDefaults objectForKey:@"upHS7Load"]]]]];
     }
 }
 
@@ -162,7 +162,7 @@
  退出应用程序
  */
 - (void)exitApp:(id)params{
-    [[ShareManager shareInstance].wkWebVC exitH5View];
+    [[HS7ShareManager shareInstance].wkWebVC exitH5View];
 }
 
 /*
@@ -170,7 +170,7 @@
  */
 - (void)upLoad:(id)params{
     //    NSLog(@"upHS7Load");
-    [[ShareManager shareInstance].wkWebVC downLoadZip];
+    [[HS7ShareManager shareInstance].wkWebVC downLoadZip];
 }
 
 

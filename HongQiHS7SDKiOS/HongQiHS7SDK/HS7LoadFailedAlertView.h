@@ -1,5 +1,5 @@
 //
-//  LoadFailedAlertView.h
+//  HS7LoadFailedAlertView.h
 //  CarApp
 //
 //  Created by 张三 on 2018/4/19.
@@ -22,16 +22,16 @@ typedef NS_ENUM(NSUInteger, AbnormalButton) {
 
 #pragma mark - 协议
 
-@class LoadFailedAlertView;
+@class HS7LoadFailedAlertView;
 
 @protocol HS7LoadFailedAlertViewDelegate <NSObject>
 
-- (void)loadFailedAlertView:(LoadFailedAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex;
+- (void)loadFailedAlertView:(HS7LoadFailedAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex;
 
 @end
 
 
-@interface LoadFailedAlertView : UIView
+@interface HS7LoadFailedAlertView : UIView
 
 /** 这个弹窗对应的内容 */
 @property (nonatomic,copy) NSString *content;

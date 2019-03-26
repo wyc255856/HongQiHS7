@@ -8,13 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WelcomeViewController : UIViewController
+@interface HS7WelcomeViewController : UIViewController
 
 /**
  初始化方法，业务方创建后，以模态的形式加载这个 ViewController，创建方式如下：
- 1.先倒入头文件：#import <CarAppSDK/WelcomeViewController.h>
+ 1.先倒入头文件：#import <CarAppSDK/HS7WelcomeViewController.h>
  2.创建控制器，将下面的 xxxx 替换成车类型：
- WelcomeViewController *vc = [[WelcomeViewController alloc] initWithCarName:@"xxxx"];
+ HS7WelcomeViewController *vc = [[HS7WelcomeViewController alloc] initWithCarName:@"xxxx"];
  [self presentViewController:vc animated:YES completion:nil];
 
  @param carName 车类型

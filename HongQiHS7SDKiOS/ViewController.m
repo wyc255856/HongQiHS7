@@ -28,8 +28,8 @@
 }
 
 - (void)buttonClicked {
-    //WelcomeViewController *vc = [[WelcomeViewController alloc] initWithCarName:@"EV_1"];
-    WelcomeViewController *vc = [[WelcomeViewController alloc] initWithCarName:@""];
+    //HS7WelcomeViewController *vc = [[HS7WelcomeViewController alloc] initWithCarName:@"EV_1"];
+    HS7WelcomeViewController *vc = [[HS7WelcomeViewController alloc] initWithCarName:@""];
     [self presentViewController:vc animated:YES completion:nil];
 }
 - (void)didReceiveMemoryWarning {

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIView (frameAdjust)
+@interface UIView (HS7frameAdjust)
 
 // 左上角x坐标
 - (CGFloat)x;

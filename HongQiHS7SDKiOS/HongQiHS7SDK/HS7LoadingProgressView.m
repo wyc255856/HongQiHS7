@@ -1,5 +1,5 @@
 //
-//  LoadingProgressView.m
+//  HS7LoadingProgressView.m
 //  CarApp
 //
 //  Created by 张三 on 2018/4/20.
@@ -15,7 +15,7 @@
 
 
 
-@interface LoadingProgressView ()
+@interface HS7LoadingProgressView ()
 /** 弹窗主内容view */
 @property (nonatomic,strong) UIView   *contentView;
 /** 提示 label */
@@ -35,7 +35,7 @@
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 
-@implementation LoadingProgressView{
+@implementation HS7LoadingProgressView{
     
 }
 

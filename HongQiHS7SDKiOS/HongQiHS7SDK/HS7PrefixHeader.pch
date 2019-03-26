@@ -15,7 +15,7 @@
 #endif /* PrefixHeader_pch */
 
 #import "UIColor+Util.h"
-#import "UIView+frameAdjust.h"
+#import "UIView+HS7frameAdjust.h"
 
 
 #define BASE_URL_PREFIX   (@"http://www.e-guides.faw.cn/C217/")

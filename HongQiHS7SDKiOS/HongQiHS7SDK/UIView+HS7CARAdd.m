@@ -13,10 +13,10 @@
 #import <QuartzCore/QuartzCore.h>
 #import "HS7CARCategoriesMacro.h"
 
-CARSYNTH_DUMMY_CLASS(UIView_CARAdd)
+CARSYNTH_DUMMY_CLASS(UIView_HS7CARAdd)
 
 
-@implementation UIView (CARAdd)
+@implementation UIView (HS7CARAdd)
 
 - (UIImage *)snapshotImage {
     UIGraphicsBeginImageContextWithOptions(self.bounds.size, self.opaque, 0);

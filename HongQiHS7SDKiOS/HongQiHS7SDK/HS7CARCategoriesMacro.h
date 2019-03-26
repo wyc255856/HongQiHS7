@@ -1,5 +1,5 @@
 //
-//  CARCategoriesMacro.h
+//  HS7CARCategoriesMacro.h
 //  CARCategories <https://github.com/ibireme/CARCategories>
 //
 //  Created by ibireme on 13/3/29.
@@ -13,8 +13,8 @@
 #import <sys/time.h>
 #import <pthread.h>
 
-#ifndef CARCategoriesMacro_h
-#define CARCategoriesMacro_h
+#ifndef HS7CARCategoriesMacro_h
+#define HS7CARCategoriesMacro_h
 
 #ifdef __cplusplus
 #define HS7CAR_EXTERN_C_BEGIN  extern "C" {

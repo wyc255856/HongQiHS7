@@ -7,7 +7,7 @@
 //
 
 #import "HS7JKWKWebViewHandler.h"
-@interface JKEventHandler (Car)
+@interface JKEventHandler (HS7Car)
 - (void)goSetPage:(id)params;
 - (void)selectModel:(id)params;
 - (void)cleanCache:(id)params;

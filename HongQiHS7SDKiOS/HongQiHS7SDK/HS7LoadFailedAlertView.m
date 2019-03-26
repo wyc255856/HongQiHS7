@@ -1,5 +1,5 @@
 //
-//  LoadFailedAlertView.m
+//  HS7LoadFailedAlertView.m
 //  CarApp
 //
 //  Created by 张三 on 2018/4/19.
@@ -12,7 +12,7 @@
 #import "HS7CarAppConstant.h"
 #import "HS7CarBundleTool.h"
 
-@interface LoadFailedAlertView ()
+@interface HS7LoadFailedAlertView ()
 /** 弹窗主内容view */
 @property (nonatomic,strong) UIView   *contentView;
 /** 弹窗标题 */
@@ -31,7 +31,7 @@
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 
-@implementation LoadFailedAlertView{
+@implementation HS7LoadFailedAlertView{
     UILabel *label;
 }
 

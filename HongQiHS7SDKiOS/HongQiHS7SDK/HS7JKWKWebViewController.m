@@ -42,7 +42,7 @@
     self.edgesForExtendedLayout = UIRectEdgeNone;
     self.automaticallyAdjustsScrollViewInsets = NO;
     
-    [ShareManager shareInstance].wkWebVC = self;
+    [HS7ShareManager shareInstance].wkWebVC = self;
     
     [self configureWKWebview];
     
@@ -206,7 +206,7 @@
             [_webView loadFileURL:temDirURL allowingReadAccessToURL:temDirURL];
         }
     }else{
-        [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/?upLoad=%@",[ShareManager shareInstance].wkWebVC.url,sUpLoad]]]];
+        [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/?upLoad=%@",[HS7ShareManager shareInstance].wkWebVC.url,sUpLoad]]]];
     }
     [self.view addSubview:_webView];
     
@@ -262,7 +262,7 @@
  加载web页面失败弹框（无网络）
  */
 - (void)showLoadFailedAlert{
-    LoadFailedAlertView *alertView = [[LoadFailedAlertView alloc]initWithTitle:@"" message:@"" delegate:self leftButtonTitle:@"确定" rightButtonTitle:@"取消"];
+    HS7LoadFailedAlertView *alertView = [[HS7LoadFailedAlertView alloc]initWithTitle:@"" message:@"" delegate:self leftButtonTitle:@"确定" rightButtonTitle:@"取消"];
     [alertView show];
 }
 
@@ -566,7 +566,7 @@ completionHandler:(void (^)(NSString * __nullable result))completionHandler {
 
 #pragma mark - Delegate - 加载失败的弹窗
 // 输入框弹窗的button点击时回调
-- (void)declareAbnormalAlertView:(LoadFailedAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+- (void)declareAbnormalAlertView:(HS7LoadFailedAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
     if (buttonIndex == AlertButtonLeft) {
         // 取消按钮
         // [CQHUD showToastWithMessage:@"点击了左边的button"];
@@ -604,7 +604,7 @@ completionHandler:(void (^)(NSString * __nullable result))completionHandler {
                 [_webView loadFileURL:temDirURL allowingReadAccessToURL:temDirURL];
             }
         }else{
-            [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/?upLoad=%@",[ShareManager shareInstance].wkWebVC.url,[userDefaults objectForKey:@"upHS7Load"]]]]];
+            [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/?upLoad=%@",[HS7ShareManager shareInstance].wkWebVC.url,[userDefaults objectForKey:@"upHS7Load"]]]]];
         }
         
     }else {
@@ -666,7 +666,7 @@ completionHandler:(void (^)(NSString * __nullable result))completionHandler {
     //下载路径
     operation.outputStream = [NSOutputStream outputStreamToFileAtPath:downloadPath append:YES];
     
-    LoadingProgressView *alertView = [[LoadingProgressView alloc] initProgressView];
+    HS7LoadingProgressView *alertView = [[HS7LoadingProgressView alloc] initProgressView];
     [alertView show];
 
     //下载进度回调

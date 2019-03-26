@@ -1,5 +1,5 @@
 //
-//  ChooseCarModelViewController.m
+//  HS7ChooseCarModelViewController.m
 //  CarApp
 //
 //  Created by Yu Chen on 2018/4/21.
@@ -15,7 +15,7 @@
 #import "HS7JKWKWebViewController.h"
 #import "HS7LoadingProgressView.h"
 
-@interface ChooseCarModelViewController ()<UIScrollViewDelegate>
+@interface HS7ChooseCarModelViewController ()<UIScrollViewDelegate>
 
 @property (nonatomic, strong) UIImageView   *bgImageView;   //背景图片
 @property (nonatomic, strong) UIImageView   *HQImageView;   //红旗图片
@@ -33,7 +33,7 @@
 
 @end
 
-@implementation ChooseCarModelViewController
+@implementation HS7ChooseCarModelViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -53,7 +53,7 @@
     [self.view addSubview:self.chooseCarModelView];
     
     /*
-    LoadingProgressView *alertView = [[LoadingProgressView alloc] initProgressView];
+    HS7LoadingProgressView *alertView = [[HS7LoadingProgressView alloc] initProgressView];
     [alertView show];
 
     

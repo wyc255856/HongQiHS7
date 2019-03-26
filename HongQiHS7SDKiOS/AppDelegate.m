@@ -26,7 +26,7 @@
     
     [NSThread sleepForTimeInterval:3.0];//设置启动页面时间
     
-//    WelcomeViewController *vc = [[WelcomeViewController alloc] initWithCarName:@"EV_1"];
+//    HS7WelcomeViewController *vc = [[HS7WelcomeViewController alloc] initWithCarName:@"EV_1"];
 //    self.window.rootViewController = vc;
     ViewController *vc = [[ViewController alloc] init];
     self.window.rootViewController = vc;

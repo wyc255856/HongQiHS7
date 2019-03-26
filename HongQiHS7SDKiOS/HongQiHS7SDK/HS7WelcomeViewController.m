@@ -14,7 +14,7 @@
 #import "HS7CarBundleTool.h"
 #import "HS7ShareManager.h"
 
-@interface WelcomeViewController (){
+@interface HS7WelcomeViewController (){
     int _timeCount;
     BOOL Finish;
     BOOL Splash;
@@ -25,7 +25,7 @@
 @property (nonatomic, strong) UILabel       *timingLabel;   //显示计时
 @end
 
-@implementation WelcomeViewController
+@implementation HS7WelcomeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -42,7 +42,7 @@
     if(self = [super init]){
         NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
         Splash = YES;
-        if(![[ShareManager shareInstance] isBlankString:carName]){
+        if(![[HS7ShareManager shareInstance] isBlankString:carName]){
             NSString *sModolName = kFuncGetCarTypeByCarName(carName);
             if(!sModolName){
                 sModolName = typeManualComfortable;
@@ -56,7 +56,7 @@
             Visitor = YES;
         }
         
-//        if(![[ShareManager shareInstance] isBlankString:carName]){
+//        if(![[HS7ShareManager shareInstance] isBlankString:carName]){
 //            NSString *sModolName = kFuncGetCarTypeByCarName(carName);
 //            if(!sModolName){
 //                sModolName = typeManualComfortable;
@@ -204,14 +204,14 @@
 //    //获取服务器最新资源版本号
 //    [self getAppNewVersion];
 //
-//    if(![[ShareManager shareInstance] isBlankString:strCarName]){
+//    if(![[HS7ShareManager shareInstance] isBlankString:strCarName]){
 //        HS7JKWKWebViewController *jkVC = [HS7JKWKWebViewController new];
 //        jkVC.url = [NSString stringWithFormat:@"%@%@",BaseURL,strCarName];
 //        jkVC.bottomViewController = self;
 //        [self presentViewController:jkVC  animated:NO completion:nil];
 //
 //    }else{
-//        ChooseCarModelViewController *vc = [[ChooseCarModelViewController alloc] init];
+//        HS7ChooseCarModelViewController *vc = [[HS7ChooseCarModelViewController alloc] init];
 //        vc.bottomViewController = self;
 //        [self presentViewController:vc  animated:NO completion:nil];
 //
@@ -220,14 +220,14 @@
     //获取服务器最新资源版本号
     [self getAppNewVersion];
     
-    if(![[ShareManager shareInstance] isBlankString:strCarName]){
+    if(![[HS7ShareManager shareInstance] isBlankString:strCarName]){
         HS7JKWKWebViewController *jkVC = [HS7JKWKWebViewController new];
         jkVC.url = [NSString stringWithFormat:@"%@%@",BaseURL,strCarName];
         jkVC.bottomViewController = self;
         [self presentViewController:jkVC  animated:NO completion:nil];
         
     }else{
-        ChooseCarModelViewController *vc = [[ChooseCarModelViewController alloc] init];
+        HS7ChooseCarModelViewController *vc = [[HS7ChooseCarModelViewController alloc] init];
         vc.bottomViewController = self;
         [self presentViewController:vc  animated:NO completion:nil];
         
@@ -241,13 +241,13 @@
 //            jkVC.bottomViewController = self;
 //            [self presentViewController:jkVC  animated:NO completion:nil];
 //        }else{
-//            ChooseCarModelViewController *vc = [[ChooseCarModelViewController alloc] init];
+//            HS7ChooseCarModelViewController *vc = [[HS7ChooseCarModelViewController alloc] init];
 //            vc.bottomViewController = self;
 //            [self presentViewController:vc  animated:NO completion:nil];
 //        }
 //
 //    }else{
-//        ChooseCarModelViewController *vc = [[ChooseCarModelViewController alloc] init];
+//        HS7ChooseCarModelViewController *vc = [[HS7ChooseCarModelViewController alloc] init];
 //        vc.bottomViewController = self;
 //        [self presentViewController:vc  animated:NO completion:nil];
 //    }

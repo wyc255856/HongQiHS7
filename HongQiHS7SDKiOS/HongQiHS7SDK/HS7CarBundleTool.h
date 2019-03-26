@@ -1,5 +1,5 @@
 //
-//  CarBundleTool.h
+//  HS7CarBundleTool.h
 //  CarAppSDK
 //
 //  Created by Yu Chen on 2018/7/7.
@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface CarBundleTool : NSObject
+@interface HS7CarBundleTool : NSObject
 +(UIImage*)getImageInBundleWithName:(NSString *)imageName;
 @end

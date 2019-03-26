@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Provides extensions for `UIView`.
  */
-@interface UIView (CARAdd)
+@interface UIView (HS7CARAdd)
 
 /**
  Create a snapshot image of the complete view hierarchy.

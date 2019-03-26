@@ -1,5 +1,5 @@
 //
-//  CarBundleTool.m
+//  HS7CarBundleTool.m
 //  CarAppSDK
 //
 //  Created by Yu Chen on 2018/7/7.
@@ -8,7 +8,7 @@
 
 #import "HS7CarBundleTool.h"
 
-@implementation CarBundleTool
+@implementation HS7CarBundleTool
 +(NSBundle*)getUIBaseBundle{
     NSBundle *bundle = [NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"HS7CarResource" withExtension:@"bundle"]];
     return bundle;
