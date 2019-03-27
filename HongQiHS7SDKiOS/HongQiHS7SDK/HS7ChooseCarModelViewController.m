@@ -309,7 +309,7 @@
         scrollView.showsVerticalScrollIndicator = NO;
         
         //ScrollView的子视图 包涵滚动内容
-        UIView *scrollSubView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, _searchView.width, (btnHeight+lineHeight)*4)];
+        UIView *scrollSubView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, _searchView.width, (btnHeight+lineHeight)*7)];
         [scrollView addSubview:scrollSubView];
         
         scrollView.alwaysBounceVertical = YES;
