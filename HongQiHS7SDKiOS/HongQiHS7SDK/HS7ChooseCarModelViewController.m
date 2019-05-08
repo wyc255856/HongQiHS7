@@ -159,10 +159,9 @@
 //        _searchView.layer.shadowRadius = 5;
 //        _searchView.layer.shadowOffset = CGSizeMake(0, 0);
         
-        
         //添加左侧的文字展示
         _searchViewLabel = [[UILabel alloc] initWithFrame:CGRectMake(10*KScale, 0, 100*KScale, 20*KScale)];
-        _searchViewLabel.text = @"五座低配";
+        _searchViewLabel.text = @"旗悦四驱版";
         _searchViewLabel.textColor = [UIColor whiteColor];
         _searchViewLabel.textAlignment = NSTextAlignmentLeft;
         _searchViewLabel.font = [UIFont systemFontOfSize:9*KScale];
@@ -231,25 +230,25 @@
     _chooseCarModelIndex = btn.tag;
     switch (tag) {
         case 100001:
-            _searchViewLabel.text = @"五座低配";
+            _searchViewLabel.text = @"旗悦四驱版";
             break;
         case 100002:
-            _searchViewLabel.text = @"五座中低配";
+            _searchViewLabel.text = @"智联旗享四驱版-五";
             break;
         case 100003:
-            _searchViewLabel.text = @"七座中低配";
+            _searchViewLabel.text = @"智联旗享四驱版-七";
             break;
         case 100004:
-            _searchViewLabel.text = @"五座中高配";
+            _searchViewLabel.text = @"智联旗畅四驱版-五";
             break;
         case 100005:
-            _searchViewLabel.text = @"七座中高配";
+            _searchViewLabel.text = @"智联旗畅四驱版-七";
             break;
         case 100006:
-            _searchViewLabel.text = @"五座顶配";
+            _searchViewLabel.text = @"智联旗领四驱版-五";
             break;
         case 100007:
-            _searchViewLabel.text = @"七座顶配";
+            _searchViewLabel.text = @"智联旗领四驱版-七";
             break;
         default:
             break;
@@ -323,7 +322,7 @@
         sdssBtn.tag = 100001;
         sdssBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
         [sdssBtn setTitleColor:[UIColor whiteColor] forState: UIControlStateNormal];
-        [sdssBtn setTitle:@"五座低配" forState: UIControlStateNormal];
+        [sdssBtn setTitle:@"旗悦四驱版" forState: UIControlStateNormal];
         sdssBtn.titleLabel.font = [UIFont systemFontOfSize:textSize];
         [sdssBtn addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
         [scrollSubView addSubview:sdssBtn];
@@ -339,7 +338,7 @@
         sdhhBtn.tag = 100002;
         sdhhBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
         [sdhhBtn setTitleColor:[UIColor whiteColor] forState: UIControlStateNormal];
-        [sdhhBtn setTitle:@"五座中低配" forState: UIControlStateNormal];
+        [sdhhBtn setTitle:@"智联旗享四驱版-五" forState: UIControlStateNormal];
         sdhhBtn.titleLabel.font = [UIFont systemFontOfSize:textSize];
         [sdhhBtn addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
         [scrollSubView addSubview:sdhhBtn];
@@ -355,7 +354,7 @@
         sdzgBtn.tag = 100003;
         sdzgBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
         [sdzgBtn setTitleColor:[UIColor whiteColor] forState: UIControlStateNormal];
-        [sdzgBtn setTitle:@"七座中低配" forState: UIControlStateNormal];
+        [sdzgBtn setTitle:@"智联旗享四驱版-七" forState: UIControlStateNormal];
         [sdzgBtn addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
         [scrollSubView addSubview:sdzgBtn];
         
@@ -371,7 +370,7 @@
         zdssBtn.tag = 100004;
         zdssBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
         [zdssBtn setTitleColor:[UIColor whiteColor] forState: UIControlStateNormal];
-        [zdssBtn setTitle:@"五座中高配" forState: UIControlStateNormal];
+        [zdssBtn setTitle:@"智联旗畅四驱版-五" forState: UIControlStateNormal];
         [zdssBtn addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
         [scrollSubView addSubview:zdssBtn];
         
@@ -387,7 +386,7 @@
         zdhhBtn.tag = 100005;
         zdhhBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
         [zdhhBtn setTitleColor:[UIColor whiteColor] forState: UIControlStateNormal];
-        [zdhhBtn setTitle:@"七座中高配" forState: UIControlStateNormal];
+        [zdhhBtn setTitle:@"智联旗畅四驱版-七" forState: UIControlStateNormal];
         [zdhhBtn addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
         [scrollSubView addSubview:zdhhBtn];
 
@@ -401,7 +400,7 @@
         zdzgBtn.tag = 100006;
         zdzgBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
         [zdzgBtn setTitleColor:[UIColor whiteColor] forState: UIControlStateNormal];
-        [zdzgBtn setTitle:@"五座顶配" forState: UIControlStateNormal];
+        [zdzgBtn setTitle:@"智联旗领四驱版-五" forState: UIControlStateNormal];
         [zdzgBtn addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
         [scrollSubView addSubview:zdzgBtn];
 
@@ -416,7 +415,7 @@
         zdqjBtn.tag = 100007;
         zdqjBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
         [zdqjBtn setTitleColor:[UIColor whiteColor] forState: UIControlStateNormal];
-        [zdqjBtn setTitle:@"七座顶配" forState: UIControlStateNormal];
+        [zdqjBtn setTitle:@"智联旗领四驱版-七" forState: UIControlStateNormal];
         [zdqjBtn addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
         [scrollSubView addSubview:zdqjBtn];
 

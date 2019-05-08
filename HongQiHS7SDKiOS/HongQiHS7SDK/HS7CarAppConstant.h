@@ -69,13 +69,13 @@ typedef NS_ENUM(NSUInteger, nMode) {
 
 
 //车型
-#define typeManualComfortable       (@"HS7_1")//  五座低配
-#define typeManualLuxury            (@"HS7_2")//  五座中低配
-#define typeManualHonorable         (@"HS7_3")//  七座中低配
-#define typeAutomaticComfortable    (@"HS7_4")//  五座中高配
-#define typeAutomaticLuxury         (@"HS7_5")//  七座中高配
-#define typeAutomaticHonorable      (@"HS7_6")//  五座顶配
-#define typeAutomaticUltimate       (@"HS7_7")//  七座顶配
+#define typeManualComfortable       (@"HS7_1")//  旗悦四驱版
+#define typeManualLuxury            (@"HS7_2")//  智联旗享四驱版-五
+#define typeManualHonorable         (@"HS7_3")//  智联旗享四驱版-七
+#define typeAutomaticComfortable    (@"HS7_4")//  智联旗畅四驱版-五
+#define typeAutomaticLuxury         (@"HS7_5")//  智联旗畅四驱版-七
+#define typeAutomaticHonorable      (@"HS7_6")//  智联旗领四驱版-五
+#define typeAutomaticUltimate       (@"HS7_7")//  智联旗领四驱版-七
 
 //通过车名称获取车型
 #define kFuncGetCarTypeByCarName(sName)\
