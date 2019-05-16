@@ -48,7 +48,7 @@
 #define KIsiPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
 
 //在线车型首页web URL
-#define BaseURL   (@"http://www.haoweisys.com/HS7/")
+#define BaseURL   (@"http://www.e-guides.faw.cn/HS7/")
 
 //在线设置页面web URL
 #define SettingURL   (@"http://www.e-guides.faw.cn/C217/C217_1/pages/set.html")
